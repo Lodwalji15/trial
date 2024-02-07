@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Important Message</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            background-image: url('https://github.com/Lodwalji15/trial/blob/fe355cb35e1e0eb1f09ec189aa0ea6e13f0b688f/photo.jpg'); /* Replace with your raw image URL */
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 20px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+        h1 {
+            color: #ff0066;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        p {
+            color: #333;
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+        button {
+            background-color: #ff0066;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #ff3399;
+        }
+        #Message {
+            display: none;
+            margin-top: 20px;
+            text-align: left;
+            padding: 20px;
+            border: 2px solid #ff0066;
+            border-radius: 20px;
+            background-color: #fff;
+            position: relative;
+            overflow-wrap: break-word;
+        }
+        .heart {
+            position: absolute;
+            top: -10px;
+            left: -10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Baby Meri Jaan,</h1>
+        </header>
+        <main>
+            <p>Tere liye likha h kuch button tap kr or padho usse.</p>
+            <button onclick="showMessage()" id="showButton">Tap me Please</button>
+            <div id="Message">
+                <img class="heart" src="https://emojicdn.elk.sh/❤️" alt="heart" width="30" height="30">
+                <p>Baby Gupta,</p>
+                <p>Just wanted to let you know that I love you more than anything in this world, hindi me bolu toh " Tu hai toh mujhe fir or kya chahiye".</p>
+                <p>iti ka time best tha kyuki aap mili mujhe waha, woh din jbse apni baat start hui mere liye meri zindagi ka sbse acha din tha, woh apni iti ki memories, woh pura din saath bitana, woh apna ek ek krke bahar jaana or alg alg wapas class me aana,chai bread with green chutney, madam ka bolna ki services puri do tum, tere liye golgape mangwana ...aj tk ni khaaye honge kisi ldki ne class me baith ke golgape to, woh apna pass hone ke liye bi plan bna na, apna pehla bunk woh bhi "Rail Museum" bwaal, apne klesh baazi( randi rone piyush ki bhasha me), tere liye lehnga laana, moments likhne jaau toh itne h ki ye web page bi kam pad jaye kyuki bhai moments hi itne h. haaye ye sare moments bhai bwaal, ek din esa ni jaata hoga jb ye moments na aaye ho mere mind me, bht yaad aate h bhai, bht miss krta hu terko, kya nhi kra jo bi kr skta tha kra or aagey bi krunga hi bhai, pr kya kru baby tu accept hi ni krti so me apni feelings bs control krne ki koshish krta hu, tu bolti na ki ab milne bi ni aata pehle ek awaz pr aata tha baby bs reason yehi h, me bs khud ko control krta hu warna bhai mere bski h hi ni jo terko bin dekhe reh lu itne din, babe mera pyr jo h na ye km ni hua h ye har beet te din ke saath badh hi raha hai.</p>
+                <p>Bs yehi bolna chahta hu ki baby bht pyr krta hu terse bht hi jyda kbi terko preshan ni dekh skta terko thodi bi takleef hoti na bht dukh hota h merko, tu roti na me soch yaar mere rehte me ise rone kese de skta, baby me acha ldka hu yaar kbi koi takleef ni hone dunga terko haan manta hu richness and look wise me ni hu thk pr still baby krunga tere liye sab, apni puri koshish krunga hmesha taaki tu khush rahe teri ye jo dimple wali smile h na bs ye bni rahe iske liye sb kuch krunga me.</p>
+                <p>I really love You Baby Gupta</p>
+                <p>Tera Lodwal</p>
+                <img class="heart" src="https://emojicdn.elk.sh/❤️" alt="heart" width="30" height="30">
+            </div>
+        </main>
+    </div>
+
+    <script>
+        function showMessage() {
+            var messageDiv = document.getElementById("Message");
+            var button = document.getElementById("showButton");
+            messageDiv.style.display = "block";
+            button.style.display = "none";
+        }
+    </script>
+</body>
+</html>
